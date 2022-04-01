@@ -1,17 +1,17 @@
 import boto3
 import sys
-import os.path
+import os
 
-# fspiess, 2021-11-15
+# fspiess, 2022-02-15
 #
-# how it works:
 # allowed Texract input: PNG, JPG, TIFF, PDF
 # see also https://docs.aws.amazon.com/textract/latest/dg/limits.html
+#
+# usage: retrieve_images.py <search pattern> <optional: filename pattern, e.g. 2021-10-08>
 
 debug = False
-IMAGE_DIR='/Users/fspiess/Desktop/Screenshots'
-# for dev:
-#image_dir='/Users/fspiess/git/CodeCommit/AWS-Services/Textract/imageDir'
+IMAGE_DIR=os.environ['HOME']+'/Desktop/Screenshots'
+#IMAGE_DIR='./images'
 TEXTRACT_OUTPUT_DIR = IMAGE_DIR + "/textract-data"
 txtNames = []
 imageList = []
@@ -79,13 +79,12 @@ def update_local_text_data(image_dir, textract_output_dir):
     for fileName in imageList:
         fileName = fileName.strip()
 
-        # skip OCR if .txt already exists:
+        # skip call to Textract if .txt already exists:
         if os.path.isfile(textract_output_dir+"/"+fileName+'.txt'):
             if debug:
                 print('  image '+fileName+' is alrady processed, skipping...')
             continue
-        if debug:
-            print("image to be processed by Textract: "+str(fileName))
+        print("image to be processed by Textract: "+str(fileName))
         # Read document content
         with open(image_dir+"/"+fileName, 'rb') as document:
             imageBytes = bytearray(document.read())
@@ -100,7 +99,6 @@ def show_results(image_dir, textract_output_dir):
     global imageString
     global imageNumber
     found = 0
-    #print('matching .txt files found:')
     for fileName in imageList:
         if fileNamePattern != "" and fileNamePattern not in fileName:
             continue

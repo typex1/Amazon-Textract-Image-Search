@@ -1,0 +1,14 @@
+Solution overview
+The following diagram shows the solution architecture.
+laws
+AWS Cloud
+App
+-
+</>
+Amazon API Gateway
+AWS Step Functions workflow
+Audit Incoming Request
+Execute Rule
+Audit Store
+Audit Outgoing Response
+A
