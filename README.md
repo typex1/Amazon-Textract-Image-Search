@@ -1,9 +1,9 @@
 # Textract Image Search
 Retrieve local images more easily by retrieving their text content using Amazon Textract.
 
-Motivation of this small Python project which uses only ONE from the 250+ AWS services: Amazon Textract:
+Motivation of this small Python project which uses only ONE from the 250+ AWS services: Amazon Textract.
 
-* More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text.
+* More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one: ![Architecture Image](./image/Screenshot\ 2022-04-01\ at\ 13.17.06.png)
 
 Solution:
 * To support a text based search in images, you typically use an OCR (Optical Image Recognition) step before.
