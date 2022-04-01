@@ -33,7 +33,7 @@ But what to do if you have 1000+ images to look into?
     ```
 * As a result, the script will retrieve two image files containing "Gateway", the search is done irrespective of upper or lower case.
 * For your transparency, check this repository's image files in ``` images/ ``` and text files in ``` images/textract-data/ ```.
-* As you can see, Amazon Textract is also capable to retrieve text from handwritten input (file day_60.jpg - source indication is here: https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg )
+* As you can see, Amazon Textract is also capable to retrieve text from handwritten input (file https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg - source indication is here: https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg )
 
 
 ## Further steps:
