@@ -1,0 +1,28 @@
+E DAY6 - 100DaysofAWs
+API Gateway Caching
+you can cache your endpoint responses
+with caching you can reduce the number
+of calls made to endpoint
+Caching improve the latency of API
+time-to-live ( TTL) period in seconds
+API Gateway caches response for a specific
+TTL is 300 seconds.
+Default Max TTL is 3600 sec, TTL = O means dis able
+Max size of respons that can be cached
+is 1048576 bytes ( 1.05 MB)
+caching is chargable (per hour) and not
+micloded in free tier.
+Flush the cache
+can flush API stage's entire most cache
+to you ensure API's client gets
+recent response.
+served from the integration endpoint until
+After the cache is flushed, respones are
+next cache is build up again
+the
++
+$
+*
+R
+*
+&
