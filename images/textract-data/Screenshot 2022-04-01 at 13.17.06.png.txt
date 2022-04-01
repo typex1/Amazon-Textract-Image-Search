@@ -1,0 +1,24 @@
+New Managed Account
+Couchbase Cluster Access
+IAM Integration Role
+Shared Services Account
+Couchbase
+Cluster
+Control Tower
+Management
+Account
+Launch Account
+AWS Service
+Amazon
+CloudWatch
+AWS CloudFormation
+Administrator
+Account
+Add a Stack
+StackSet
+Catalog
+Create Managed Account
+Trigger Lambda
+Rule
+Lambda
+Function

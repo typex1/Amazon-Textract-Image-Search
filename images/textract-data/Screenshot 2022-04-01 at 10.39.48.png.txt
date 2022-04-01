@@ -1,0 +1,98 @@
+INFOSYS CORTEX WITH AMAZON CONNECT
+CONTER
+LEARN
+Channels
+A
+CTI/IVR
+Intercept/Route
+Voice
+Amazon Connect
+Inbound Interaction
+Speech and Text
+handling
+Analytics
+Voice IVR
+Agent desktop/CCP
+Industry Standard
+Compliance
+CORTER
+Chat Integration
+Video /Amazon
+Chat
+Skill Based Routing
+Chime
+Transcription
+Self-Serve
+Apps
+B
+AWS Marketplace
+Workforce Management
+Omnichannel Local
+Email
+-Verint/Calabrio
+Measure Engage
+Outbound Dialer
+Co Browsing, Screen
+C
+Acqueon
+Recording Calabrio
+CORTEX
+OPTIMIZE
+Social and
+other channels
+Data Ingestion
+Data Lake
+Genes & Genomes
+.
+Act
+(Agent, Supervisor)
+(Supervisor, Center Head, Operations Head)
+Amazon Connect CCP
+Amazon Connect Dashboard
+Agent Desktop
+00. Analytics Dashboards
+EMPOWER- Plaggablo Extensions
+Smart Guidance Bar
+Custom Dashboards (Roaltimo/Historic)
+Integration with existing Dashboards
+intoligent Soarch
+Simulations
+Continuous Loarning
+APIs/Pluggable Micro Frontends
+EMPOWER
+Assistance
+Management
+Conversation &
+State Intelligence
+Sense
+Discover
+Adapters/Data/API Integration
+laws Lex, Contact Lens Comprehend, Wisdom, Connect, Polly, S3, Redshift, Lake Formation, Sage Maker
+E
+F
+D
+Enterprise Systems
+Services, Workflows, CRM.
+RPAs, Processes, Data
+Flows, Storage)
+Agents Virtuel Assistant
+Assistance Feedback and
+Adoption Management
+Po
+Knowledge Graph &
+Informed
+Context
+Decisions
+Analyze
+Intelligent Search
+Telemetry
+Assistance Configuration &
+Personalization
+Cognitive
+Intelligence
+CORTEX CORE
+AI Workbench & Predictive Models
+What- if Analysis
+Automation
+E
+Digitized SOPs

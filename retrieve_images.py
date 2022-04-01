@@ -7,12 +7,16 @@ import os
 # allowed Texract input: PNG, JPG, TIFF, PDF
 # see also https://docs.aws.amazon.com/textract/latest/dg/limits.html
 #
-# usage: retrieve_images.py <search pattern> <optional: filename pattern, e.g. 2021-10-08>
+# start: set variable IMAGE_DIR to match your image folder
+#
+# usage: python3 retrieve_images.py <search pattern> <optional: filename pattern, e.g. 2021-10-08>
 
 debug = False
-IMAGE_DIR=os.environ['HOME']+'/Desktop/Screenshots'
-#IMAGE_DIR='./images'
+##### set IMAGE_DIR to match your image folder ##########
+#IMAGE_DIR=os.environ['HOME']+'/Desktop/Screenshots'
+IMAGE_DIR='./images'
 TEXTRACT_OUTPUT_DIR = IMAGE_DIR + "/textract-data"
+
 txtNames = []
 imageList = []
 imageString = ""
@@ -66,12 +70,12 @@ def detect_text_in_reading_order(textract_response,fileName,textract_output_dir)
     output.close()
 
 def update_local_text_data(image_dir, textract_output_dir):
+    textract = boto3.client('textract')
+    textract_files = []
     for (dirpath, dirnames, filenames) in os.walk(image_dir):
         for file in filenames:
             if file.endswith('.jpg') or file.endswith('.png')\
               or file.endswith('.JPG') or file.endswith('.PNG'):
-                #fsp: change 20211209:
-                #imagelist contains whole PNG/JPG file paths:
                 imageList.append(file)
     if debug:
         print('image list:'+str(imageList))
@@ -84,12 +88,16 @@ def update_local_text_data(image_dir, textract_output_dir):
             if debug:
                 print('  image '+fileName+' is alrady processed, skipping...')
             continue
-        print("image to be processed by Textract: "+str(fileName))
+        else:
+            print("image to be processed by Textract: "+str(fileName))
+            textract_files.append(str(fileName))
+    if len(textract_files) > 0:
+        print("\nimage processing will take approx. {} seconds".format(str(3.5*len(textract_files))))
+    for fileName in textract_files:
         # Read document content
         with open(image_dir+"/"+fileName, 'rb') as document:
             imageBytes = bytearray(document.read())
 
-        textract = boto3.client('textract')
         # Call Amazon Textract
         response = textract.detect_document_text(Document={'Bytes': imageBytes})
         detect_text_in_reading_order(response,fileName,textract_output_dir)
@@ -106,8 +114,6 @@ def show_results(image_dir, textract_output_dir):
 
         with open(textract_output_dir+"/"+txtName) as f:
             if contentPattern.lower()  in f.read().lower():
-                # fsp change
-                #imageString = imageString + '\"'+txtName[:-4]+'\"' + " "
                 imageString = imageString + '\"'+image_dir+"/"+txtName[:-4]+'\"' + " "
                 imageNumber = imageNumber + 1
 
@@ -127,9 +133,6 @@ def show_results(image_dir, textract_output_dir):
 def search_local_text():
     global fileNamePattern
     global contentPattern
-    if len(sys.argv) < 2:
-        print ("usage: "+sys.argv[0]+" <search pattern> <optional: filename pattern, e.g. 2021-10-08>")
-        sys.exit()
 
     if len(sys.argv) ==3:
         fileNamePattern=sys.argv[2]
@@ -139,6 +142,10 @@ def search_local_text():
 
 # main
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print ("usage: python3 "+sys.argv[0]+" \"<search pattern>\" <optional: filename pattern, e.g. \"2021-10-08\">")
+        sys.exit()
+
     check_dirs(IMAGE_DIR, TEXTRACT_OUTPUT_DIR)
     update_local_text_data(IMAGE_DIR, TEXTRACT_OUTPUT_DIR)
     search_local_text()
