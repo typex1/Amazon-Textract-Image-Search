@@ -1,7 +1,7 @@
 # Amazon Textract Image Search
 Retrieve local images more easily by retrieving their text content using Amazon Textract.
 
-## Motivation of this small Python project which uses only ONE from the 250+ AWS services: Amazon Textract.
+## Motivation of this project which uses only one single AWS service: Amazon Textract.
 
 * More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one:
 
