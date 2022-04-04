@@ -19,8 +19,9 @@ But what to do if you have 1000+ images to look into?
 ## Requirements
 
 * [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you do not already have one and log in. The IAM user that you use must have sufficient permissions to make necessary AWS service calls and manage AWS resources.
-* You need Python installed on your laptop.
+* You need Python3 installed on your laptop. On top, please install the AWS SDK named "boto3": ```pip install boto3```.
 * Preferably your laptop is running MacOS, because in that case, opening the images using the "Preview" app is also done within the Python script.
+* If you are running Linux or Windows, please exchange "Preview" with your preferred image viewer.
 * You need an AWS account and your Python script needs permission to use the Amazon Textract API.
 
 ## Getting started:
@@ -38,4 +39,4 @@ But what to do if you have 1000+ images to look into?
 
 ## Further steps:
 
-* If you a running on Windows or Linux, 
+* If you a running on Windows or Linux, exchange your preferred image viewer in the Python script, in function ```show_results()```.
