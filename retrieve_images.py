@@ -117,7 +117,6 @@ def show_results(image_dir, textract_output_dir):
                 imageString = imageString + '\"'+image_dir+"/"+txtName[:-4]+'\"' + " "
                 imageNumber = imageNumber + 1
 
-    #print('.txt file locations for matching files: ')
     for i in imageString.split('" "'):
         i=i.replace('" ','')
         i=i.replace('"','')
@@ -125,7 +124,6 @@ def show_results(image_dir, textract_output_dir):
     if imageString=='':
         found=0
 
-    #print("Found "+str(found)+" images: "+str(imageString)+". ")
     print("Found {} images: {}".format(found,imageString))
     if found > 0:
         os.system('open -a Preview '+imageString)
