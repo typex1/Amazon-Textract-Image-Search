@@ -7,7 +7,7 @@ Retrieve local images more easily by retrieving their text content using Amazon 
 
 ![Architecture Image](./images/Screenshot&#32;2022-04-01&#32;at&#32;13.17.06.png)
 
-But what to do if you have 1000+ images to look into?
+Not a problem if you need to flip through a dozen of images. But what to do if you have 1000+ images to look into?
 
 ## Solution:
 
