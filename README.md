@@ -19,7 +19,10 @@ But what to do if you have 1000+ images to look into?
 ## Requirements
 
 * [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you do not already have one and log in. The IAM user that you use must have sufficient permissions to make necessary AWS service calls and manage AWS resources.
-* You need Python3 installed on your laptop. On top, please install the AWS SDK named "boto3": ```pip install boto3```.
+* You need Python3 installed on your laptop. On top, please install the AWS SDK named "boto3":
+    ```
+    pip install boto3
+    ```
 * Preferably your laptop is running MacOS, because in that case, opening the images using the "Preview" app is also done within the Python script.
 * If you are running Linux or Windows, please exchange "Preview" with your preferred image viewer.
 * You need an AWS account and your Python script needs permission to use the Amazon Textract API.
@@ -33,8 +36,12 @@ But what to do if you have 1000+ images to look into?
     python3 retrieve_images.py "gateway"
     ```
 * As a result, the script will retrieve two image files containing "Gateway", the search is done irrespective of upper or lower case.
-* For your transparency, check this repository's image files in ``` images/ ``` and text files in ``` images/textract-data/ ```.
-* As you can see, Amazon Textract is also capable to retrieve text from handwritten input (file https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg - source indication is here: https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg )
+* Optionally, you can indicate an image file name constraint in the second parameter, e.g. filtering images which carry "2022-04" in their names:
+    ```
+    python3 retrieve_images.py "gateway" "2022-04"
+    ```
+* For your understanding, check this repository's image files in ``` images/ ``` and text files in ``` images/textract-data/ ```.
+* As you can see, Amazon Textract is also capable to retrieve text from handwritten input, e.g. https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg - the source of that image is [here](https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg).
 
 
 ## Further steps:
