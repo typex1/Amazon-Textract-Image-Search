@@ -41,7 +41,8 @@ But what to do if you have 1000+ images to look into?
     python3 retrieve_images.py "gateway" "2022-04"
     ```
 * For your understanding, check this repository's image files in ``` images/ ``` and text files in ``` images/textract-data/ ```.
-* As you can see, Amazon Textract is also capable to retrieve text from handwritten input, e.g. https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg - the source of that image is [here](https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg).
+* As you can see, Amazon Textract is also capable to retrieve text from handwritten input, e.g. [day_60.jpg](https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg) - the source of that image is [here](https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg).
+* Given the above image example containing images parts in light gray, so with very little contrast, you will see that also those faint areas will be detected correctly.
 
 
 ## Further steps:
