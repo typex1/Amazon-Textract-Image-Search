@@ -36,7 +36,7 @@ Not a problem if you need to flip through **a dozen of images**. But what to do 
     python3 retrieve_images.py "gateway"
     ```
 * As a result, the script will retrieve two image files containing "Gateway", the search is done irrespective of upper or lower case.
-* Optionally, you can indicate an image file name constraint in the second parameter, e.g. filtering images which carry "2022-04" in their names:
+* Optionally, you can indicate an image file name constraint in the second parameter, e.g. filtering only those images containing "2022-04" in their names:
     ```
     python3 retrieve_images.py "gateway" "2022-04"
     ```
