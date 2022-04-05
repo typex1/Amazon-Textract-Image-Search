@@ -13,8 +13,8 @@ import os
 
 debug = False
 ##### set IMAGE_DIR to match your image folder ##########
-#IMAGE_DIR=os.environ['HOME']+'/Desktop/Screenshots'
-IMAGE_DIR='./images'
+IMAGE_DIR=os.environ['HOME']+'/Desktop/Screenshots'
+#IMAGE_DIR='./images'
 TEXTRACT_OUTPUT_DIR = IMAGE_DIR + "/textract-data"
 
 txtNames = []
