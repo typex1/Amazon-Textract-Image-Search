@@ -2,7 +2,7 @@ import boto3
 import sys
 import os
 
-# fspiess, 2022-02-15
+# fspiess, 2022-03-15
 #
 # allowed Texract input: PNG, JPG, TIFF, PDF
 # see also https://docs.aws.amazon.com/textract/latest/dg/limits.html
