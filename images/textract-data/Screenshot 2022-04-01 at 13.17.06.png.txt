@@ -12,13 +12,16 @@ AWS Service
 Amazon
 CloudWatch
 AWS CloudFormation
-Administrator
+example image
 Account
-Add a Stack
-StackSet
-Catalog
 Create Managed Account
 Trigger Lambda
-Rule
 Lambda
 Function
+Add a Stack
+-
+StackSet
+Administrator
+Catalog
+Rule
+I
