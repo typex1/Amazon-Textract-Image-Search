@@ -1,6 +1,7 @@
 import boto3
 import sys
 import os
+import platform
 
 # fspiess, 2022-03-15
 #
@@ -125,7 +126,7 @@ def show_results(image_dir, textract_output_dir):
         found=0
 
     print("Found {} images: {}".format(found,imageString))
-    if found > 0:
+    if found > 0 and platform.system() == 'Darwin':
         os.system('open -a Preview '+imageString)
 
 def search_local_text():
