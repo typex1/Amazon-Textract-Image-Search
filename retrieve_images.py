@@ -126,6 +126,7 @@ def show_results(image_dir, textract_output_dir):
         found=0
 
     print("Found {} images: {}".format(found,imageString))
+    # OS detection: Darwin (MacOS), Linux, Windows
     if found > 0 and platform.system() == 'Darwin':
         os.system('open -a Preview '+imageString)
 
