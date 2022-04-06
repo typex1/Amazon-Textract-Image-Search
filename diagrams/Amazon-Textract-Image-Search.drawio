@@ -13,7 +13,7 @@
         <mxCell id="BWHgsdIchDKZ8x9PaXOv-3" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;~/images/img_01.png&lt;br&gt;~/images/img_02.png&lt;br&gt;~/images/img_03.png&lt;br&gt;~/images/img_04.png&lt;br&gt;...&lt;br&gt;...&lt;br&gt;...&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;~/textract_data/img_01.png.txt&lt;br&gt;~/textract_data/img_02.png.txt&lt;br&gt;~/textract_data/img_03.png.txt&lt;br&gt;...&lt;br&gt;...&lt;br&gt;...&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=6;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="238" y="282" width="168" height="376" as="geometry" />
         </mxCell>
-        <mxCell id="SwhUTjs0V1nWhBu83zFv-1" value="&lt;h1&gt;&lt;u&gt;Local image search using Amazon Textract&lt;/u&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="SwhUTjs0V1nWhBu83zFv-1" value="&lt;h1&gt;&lt;u&gt; search using Amazon Textract&lt;/u&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="28" y="28" width="518" height="56" as="geometry" />
         </mxCell>
         <mxCell id="BWHgsdIchDKZ8x9PaXOv-1" value="local laptop" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;" parent="1" vertex="1">
