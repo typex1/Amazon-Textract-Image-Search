@@ -93,7 +93,7 @@ def update_local_text_data(image_dir, textract_output_dir):
             print("image to be processed by Textract: "+str(fileName))
             textract_files.append(str(fileName))
     if len(textract_files) > 0:
-        print("\nimage processing will take approx. {} seconds".format(str(3.5*len(textract_files))))
+        print("\nAmazon Textract image processing for {} images will take approx. {} seconds".format(str(len(textract_files)),str(6*len(textract_files))))
     for fileName in textract_files:
         # Read document content
         with open(image_dir+"/"+fileName, 'rb') as document:
