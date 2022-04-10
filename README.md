@@ -44,6 +44,9 @@ Not a problem if you need to flip through **a dozen of images**. But what to do 
 * As you can see, Amazon Textract is also capable to retrieve text from handwritten input, e.g. [day_60.jpg](https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg) - the source of that image is [here](https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg).
 * Given the above image example containing images parts in light gray, so with very little contrast, you will see that also those faint areas will be detected correctly.
 
+## Cost considerations:
+
+* As indicated in the official [Textract Pricing Data](https://aws.amazon.com/textract/pricing/), scanning 1,000 images has an effective price of US$1.50.
 
 ## Further steps:
 
