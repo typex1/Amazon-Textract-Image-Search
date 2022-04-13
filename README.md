@@ -1,13 +1,17 @@
 # Amazon Textract Image Search
-Retrieve local images more easily by retrieving their text content using Amazon Textract.
+Retrieve local images incredibly fast - based on their extracted text using Amazon Textract.
 
 ## Motivation of this project:
 
-More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one: where did I put that Couchbase related architecture diagram again?
+More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one: 
+
+Where did I put that Couchbase related architecture diagram again?
 
 ![Architecture Image](./images/Screenshot&#32;2022-04-01&#32;at&#32;13.17.06.png)
 
-Not a problem if you need to flip through **a dozen of images**. But what to do if you have **1000+** images to look into?
+Not a problem if you need to flip through **a dozen of images**.
+
+But what to do if you have **1000+** images to look into?
 
 ## Solution:
 
