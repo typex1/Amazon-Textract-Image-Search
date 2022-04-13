@@ -5,7 +5,7 @@ Retrieve local images incredibly fast - based on their extracted text using Amaz
 
 More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one: 
 
-Where did I put that Couchbase related architecture diagram again?
+Where did I put that **Couchbase** related architecture diagram again?
 
 ![Architecture Image](./images/Screenshot&#32;2022-04-01&#32;at&#32;13.17.06.png)
 
