@@ -11,14 +11,14 @@ Where did I put that **Couchbase** related architecture diagram again?
 
 Not a problem if you need to flip through **a dozen of images**.
 
-But what to do if you have **1000+** images to look into?
+But what to do if you have **1000+** images on your local computer?
 
 ## Solution:
 
 * To support a **text based search in images**, you typically use an OCR (Optical Image Recognition) step before.
 * Our OCR solution will be Amazon Textract - https://aws.amazon.com/textract/.
 * The Python script contained in this repo is creating a **local flatfile database consisting of text files** - one text (.txt) file for each image.
-* As a second step, the script allows for a substring related search in that text file list, fetching all images which contain that substring.
+* As a second step, the script allows for a substring related search in that text file list, mappping them to all images which contain that substring.
 
 ## Requirements
 
