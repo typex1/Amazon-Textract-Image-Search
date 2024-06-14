@@ -5,9 +5,9 @@ Retrieve local images incredibly fast - based on their extracted text using Amaz
 
 More than often I find myself searching for specific images I have in my collection, especially for diagrams or other images containing text like this one: 
 
-Where did I put that **Couchbase** related architecture diagram again?
+Where did I put that **Denied Topics** related Bedrock Guardrails infographics again?
 
-![Architecture Image](./images/Screenshot&#32;2022-04-01&#32;at&#32;13.17.06.png)
+![Architecture Image](./images/Bedrock-Guardrails-denied-topics.png)
 
 Not a problem if you need to flip through **a dozen of images**.
 
@@ -37,12 +37,12 @@ But what to do if you have **1000+** images on your local computer?
 * The default image path is ./images, the default Amazon Textract output path for the text files is ./images/textract-data
 * Perform a test - copy and past the command below:
     ```
-    python3 retrieve_images.py "gateway"
+    python3 retrieve_images.py "denied topics"
     ```
 * As a result, the script will retrieve two image files containing "Gateway", the search is done irrespective of upper or lower case.
-* Optionally, you can indicate an image file name constraint in the second parameter, e.g. filtering only those images containing "2022-04" in their names:
+* Optionally, you can indicate an image file name constraint in the second parameter, e.g. filtering only those images containing "2024-04" in their names:
     ```
-    python3 retrieve_images.py "gateway" "2022-04"
+    python3 retrieve_images.py "gateway" "2024-04"
     ```
 * For your understanding, check this repository's image files in ``` images/ ``` and text files in ``` images/textract-data/ ```.
 * As you can see, Amazon Textract is also capable to retrieve text from handwritten input, e.g. [day_60.jpg](https://github.com/typex1/Amazon-Textract-Image-Search/blob/main/images/day_60.jpg) - the source of that image is [here](https://raw.githubusercontent.com/sarthaksavvy/100DaysOfAWS/main/images/6e6f13a0a20de75159d04a34e394f15cc16386d0.jpeg).
